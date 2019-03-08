@@ -1,0 +1,171 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
+a {
+  text-decoration: none;
+}
+
+body {
+  background-color: #FDB014;
+  display: grid;
+}
+
+.grid, .mainPart .tab_head, .mainPart .tab_main div {
+  display: grid;
+}
+
+.wrap {
+  width: 1000px;
+  margin: 0 auto;
+}
+
+header {
+  grid-template-columns: 1fr 1fr 1fr;
+  height: 60px;
+  background-color: #3C1900;
+  border-radius: 0 0 25px 25px;
+  color: white;
+  margin: 0 auto;
+  text-align: center;
+  margin-bottom: 20px;
+}
+header div {
+  justify-content: center;
+  align-self: center;
+}
+header .logo p {
+  font: 32px Segoe Print;
+  margin-top: 0px;
+}
+header .number p {
+  font: bold 14px Calibri;
+}
+header .button {
+  width: 120px;
+  height: 36px;
+  background-color: #FFD686;
+  margin: 0 auto;
+  border-radius: 5px;
+}
+header .button p {
+  font: 20px Helvetica;
+  color: #3C1900;
+  align-self: center;
+}
+
+.mainPart {
+  grid-template-columns: 1fr 1fr;
+  margin: 0 auto;
+}
+.mainPart .tab_head {
+  width: 100%;
+  height: 40px;
+  text-align: center;
+  background-color: #FDC350;
+  cursor: pointer;
+  z-index: 100;
+}
+.mainPart .tab_head:first-child {
+  border-radius: 30px 10px 0 0;
+  box-shadow: 0px -3px 5px 0px rgba(0, 0, 0, 0.5);
+}
+.mainPart .tab_head p {
+  align-self: center;
+  font: 20px Helvetica;
+  color: #CE5700;
+  text-shadow: 1px 1px 1px black;
+}
+.mainPart .tab_main {
+  background-color: #FDC350;
+  height: 500px;
+  box-sizing: border-box;
+  grid-column: 1/span 2;
+  border-radius: 0 30px 10px 10px;
+  grid-template-rows: 40px 20px 140px 160px 50px;
+  grid-template-columns: 1fr 2fr;
+  grid-row-gap: 10px;
+  padding: 20px 40px 20px 0;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+}
+.mainPart .tab_main .list {
+  background-color: #fcdda2;
+  /*@include borR(25px);*/
+  border-radius: 10px 0 0 10px;
+  border: 2px solid #fdb014;
+  height: 460px;
+  width: 260px;
+  align-items: center;
+  align-self: center;
+  margin: 0 auto;
+  grid-row: 1/6;
+  margin-top: 0px;
+  overflow-y: scroll;
+  padding: 5px 0;
+  box-sizing: border-box;
+}
+.mainPart .tab_main .list p {
+  padding: 5px 15px;
+  margin-bottom: 5px;
+  border-bottom: 1px solid #CE5700;
+  /*font-family: Arial;*/
+}
+.mainPart .tab_main input {
+  align-items: center;
+  align-self: stretch;
+  background-color: #fcdda2;
+  border-radius: 10px;
+  border: 2px solid #fdb014;
+  padding: 0 10px;
+}
+.mainPart .tab_main .news_head input {
+  font-size: 24px;
+}
+.mainPart .tab_main .news_tags input {
+  border-radius: 5px;
+  width: 40%;
+}
+.mainPart .tab_main .news_mainText textarea {
+  overflow-y: scroll;
+  align-self: stretch;
+  background-color: #fcdda2;
+  border-radius: 10px 0 0 10px;
+  border: 2px solid #fdb014;
+  padding: 5px;
+  font-size: 18px;
+}
+.mainPart .tab_main .news_settings {
+  background-color: #fcdda2;
+  border-radius: 10px;
+  border: 2px solid #fdb014;
+  grid-template-rows: repeat(4, 1fr);
+  grid-template-columns: 1fr 1fr;
+  grid-gap: 5px;
+  padding: 10px 30px;
+}
+.mainPart .tab_main .news_settings p {
+  align-self: center;
+}
+.mainPart .tab_main .news_settings input {
+  text-align: center;
+  border-radius: 5px;
+  background-color: white;
+}
+.mainPart .tab_main .news_settings select {
+  padding: 0 90px;
+  border-radius: 5px;
+  border: 2px solid #fdb014;
+}
+.mainPart .tab_main .button {
+  background-color: #CE5700;
+}
+.mainPart .tab_main .button p {
+  align-self: center;
+  align-items: center;
+  text-align: center;
+  font: 20px Helvetica;
+  color: #fcdda2;
+}
+
+/*# sourceMappingURL=style.css.map */
