@@ -11,7 +11,7 @@ $colM4:#fdb014;
 }
 .mainPart{
     
-    grid-template-columns: 1fr 1fr;
+    
     
     margin: 0 auto;
     .tab_head{
@@ -19,13 +19,10 @@ $colM4:#fdb014;
         width:100%;
         height: 40px;
         text-align: center;
-        @include bgCol($colM1);
+        
         cursor: pointer;
         z-index: 100;
-        &:first-child{
-            border-radius: 30px 10px 0 0;
-            box-shadow: 0px -3px 5px 0px rgba(0,0,0,0.5);
-        }
+
         p{
             align-self: center;
             font: 20px Helvetica;
@@ -33,18 +30,17 @@ $colM4:#fdb014;
             text-shadow: 1px 1px 1px black;
         }
     }
-    .tab_main{
-        @include bgCol($colM1);
-        
-        height: 500px;
-        box-sizing: border-box;
-        grid-column: 1/span 2;
-        border-radius: 0 30px 10px 10px;
+    
+
+    .tab_main1{
+        @extend .tab_main;
         grid-template-rows: 40px 20px 140px 160px 50px;
         grid-template-columns:1fr 2fr;
         grid-row-gap: 10px;
         padding: 20px 40px 20px 0;
-        box-shadow: 0 0 10px rgba(0,0,0,0.5);
+        grid-column: 1/span 2;
+        border-radius: 0 30px 10px 10px;
+        padding: 20px 40px 20px 0;
         div{
             @extend .grid;
         }

@@ -4,11 +4,11 @@
     <meta charset="UTF-8">
     <title>KesNews</title>
     <link rel="stylesheet" href="style.css">
+    <script type="text/javascript" src="script.js"></script>
 </head>
 <body>
 <div class="wrap">
- <!-- <img src="back5.jpg" alt="" style="position: fixed;top:0;left: 0;right:0;bottom:0; z-index: -10;opacity: 0.8;width:100%;height: 100%"> -->
-  <!--<img src="back4.jpg" alt="" style="position: fixed;top:0;left: 0;right:0;bottom:0; z-index: -10;opacity: 0.8;width:100%;height: 100%">-->
+
   <img src="back8.jpg" alt="" style="position: fixed;top:0;left: 0;right:0;bottom:0; z-index: -10;opacity: 0.9;width:100%;height: 100%">
   
    <header class="grid">
@@ -20,9 +20,9 @@
        <div class="button grid"><p>Выход</p></div>
    </header>
    <div class="mainPart grid">
-       <div class="tab_head"><p>В очереди</p></div>
-       <div class="tab_head" style="background-color: transparent"><p>Неназначеные</p></div>
-       <div class="tab_main grid">
+       <div class="tab_head act" onclick="fun1()"><p>В очереди</p></div>
+       <div class="tab_head trans" onclick="fun2()" ><p>Неназначеные</p></div>
+       <div class="tab_main1 grid">
           <div class="list">
               <p>Lorem ipsum dolor sit amet.</p>
               <p>Lorem ipsum dolor sit amet.</p>
@@ -83,7 +83,385 @@
           </div>
           <div class="button"><p>Сохранить</p></div>
        </div>
-       <div class="tab_main" style="display: none"></div>       
+       <div class="tab_main2 inactive">
+           <div class="calendar grid">
+              <div class="calTitleMonthLine">
+                  <div class="bPrev"><p>&lt;</p></div>
+                  <div class="calTitleMonth"><p>Март</p></div>
+                  <div class="bNext"><p>&gt;</p></div>
+              </div>
+              <div class="calTitleWeekLine">
+                  <div class="calTitleWeek">
+                      <p>Пн</p>
+                  </div>
+                  <div class="calTitleWeek">
+                      <p>Вт</p>
+                  </div>
+                  <div class="calTitleWeek">
+                      <p>Ср</p>
+                  </div>
+                  <div class="calTitleWeek">
+                      <p>Чт</p>
+                  </div>
+                  <div class="calTitleWeek">
+                      <p>Пт</p>
+                  </div>
+                  <div class="calTitleWeek">
+                      <p>Сб</p>
+                  </div>
+                  <div class="calTitleWeek">
+                      <p>Нд</p>
+                  </div>
+              </div>
+              <div class="calMain" onclick="fun3()">
+                  <div class="calLine">
+                      <div class="calDay">
+                          <p>25</p>
+                      </div>
+                      <div class="calDay">
+                          <p>26</p>
+                      </div>
+                      <div class="calDay">
+                          <p>27</p>
+                      </div>
+                      <div class="calDay">
+                          <p>28</p>
+                      </div>
+                      <div class="calDay lot">
+                          <p>1</p>
+                      </div>
+                      <div class="calDay lot">
+                          <p>2</p>
+                      </div>
+                      <div class="calDay">
+                          <p>3</p>
+                      </div>
+                  </div>
+                  <div class="calLine">
+                      <div class="calDay few">
+                          <p>4</p>
+                      </div>
+                      <div class="calDay">
+                          <p>5</p>
+                      </div>
+                      <div class="calDay few">
+                          <p>6</p>
+                      </div>
+                      <div class="calDay">
+                          <p>7</p>
+                      </div>
+                      <div class="calDay">
+                          <p>8</p>
+                      </div>
+                      <div class="calDay">
+                          <p>9</p>
+                      </div>
+                      <div class="calDay">
+                          <p>10</p>
+                      </div>
+                  </div>
+                  <div class="calLine">
+                      <div class="calDay lot">
+                          <p>11</p>
+                      </div>
+                      <div class="calDay few">
+                          <p>12</p>
+                      </div>
+                      <div class="calDay med">
+                          <p>13</p>
+                      </div>
+                      <div class="calDay med ">
+                          <p>14</p>
+                      </div>
+                      <div class="calDay few">
+                          <p>15</p>
+                      </div>
+                      <div class="calDay med">
+                          <p>16</p>
+                      </div>
+                      <div class="calDay few">
+                          <p>17</p>
+                      </div>
+                  </div>
+                  <div class="calLine">
+                      <div class="calDay">
+                          <p>18</p>
+                      </div>
+                      <div class="calDay">
+                          <p>19</p>
+                      </div>
+                      <div class="calDay lot">
+                          <p>20</p>
+                      </div>
+                      <div class="calDay lot">
+                          <p>21</p>
+                      </div>
+                      <div class="calDay lot">
+                          <p>22</p>
+                      </div>
+                      <div class="calDay">
+                          <p>23</p>
+                      </div>
+                      <div class="calDay">
+                          <p>24</p>
+                      </div>
+                  </div>
+                  <div class="calLine">
+                      <div class="calDay">
+                          <p>25</p>
+                      </div>
+                      <div class="calDay few">
+                          <p>26</p>
+                      </div>
+                      <div class="calDay med">
+                          <p>27</p>
+                      </div>
+                      <div class="calDay">
+                          <p>28</p>
+                      </div>
+                      <div class="calDay lot">
+                          <p>29</p>
+                      </div>
+                      <div class="calDay lot">
+                          <p>30</p>
+                      </div>
+                      <div class="calDay">
+                          <p>31</p>
+                      </div>
+                  </div>
+                  <div class="calLine">
+                      <div class="calDay">
+                          <p>1</p>
+                      </div>
+                      <div class="calDay few">
+                          <p>2</p>
+                      </div>
+                      <div class="calDay">
+                          <p>3</p>
+                      </div>
+                      <div class="calDay med">
+                          <p>4</p>
+                      </div>
+                      <div class="calDay med">
+                          <p>5</p>
+                      </div>
+                      <div class="calDay">
+                          <p>6</p>
+                      </div>
+                      <div class="calDay few">
+                          <p>7</p>
+                      </div>
+                  </div>
+              </div>
+              <div class="calLegRow">
+                  <div class="calLeg">
+                      <p>Нет</p>
+                  </div>
+                  <div class="calLeg few">
+                      <p>Мало</p>
+                  </div>
+                  <div class="calLeg med">
+                      <p>Достаточно</p>
+                  </div>
+                  <div class="calLeg lot">
+                      <p>Много</p>
+                  </div>
+              </div>
+                            
+           </div>
+           <div class="recordsList inactive">
+               <div class="listHead">
+                   <div class="bBack" onclick= "fun4()">
+                       <p>&larr; Назад</p>
+                   </div>
+                   <div class="listData">
+                       <p>9.03.2019</p>
+                   </div>
+               </div>
+               <div class="listMain">
+                   <div class="record">
+                       <div class="recHead">
+                           <div class="recTitle">
+                               <p>Шок Дня!</p>
+                           </div>
+                           <div class="recButt">
+                               <div class="recButtEd">
+                                   <p>&#9998;</p>
+                               </div>
+                               <div class="recButtDel">
+                                   <p>&times;</p>
+                               </div>
+                           </div>
+                       </div>
+                       <div class="recMain">
+                           <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Omnis dolore debitis aliquam eum, explicabo atque hic sint necessitatibus odit illo.</p>
+                       </div>
+                   </div>
+                   <div class="record">
+                       <div class="recHead">
+                           <div class="recTitle">
+                               <p>Шок Дня!</p>
+                           </div>
+                           <div class="recButt">
+                               <div class="recButtEd">
+                                   <p>&#9998;</p>
+                               </div>
+                               <div class="recButtDel">
+                                   <p>&times;</p>
+                               </div>
+                           </div>
+                       </div>
+                       <div class="recMain">
+                           <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Omnis dolore debitis aliquam eum, explicabo atque hic sint necessitatibus odit illo.</p>
+                       </div>
+                   </div>
+                   <div class="record">
+                       <div class="recHead">
+                           <div class="recTitle">
+                               <p>Шок Дня!</p>
+                           </div>
+                           <div class="recButt">
+                               <div class="recButtEd">
+                                   <p>&#9998;</p>
+                               </div>
+                               <div class="recButtDel">
+                                   <p>&times;</p>
+                               </div>
+                           </div>
+                       </div>
+                       <div class="recMain">
+                           <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Omnis dolore debitis aliquam eum, explicabo atque hic sint necessitatibus odit illo.</p>
+                       </div>
+                   </div>
+                   <div class="record">
+                       <div class="recHead">
+                           <div class="recTitle">
+                               <p>Шок Дня!</p>
+                           </div>
+                           <div class="recButt">
+                               <div class="recButtEd">
+                                   <p>&#9998;</p>
+                               </div>
+                               <div class="recButtDel">
+                                   <p>&times;</p>
+                               </div>
+                           </div>
+                       </div>
+                       <div class="recMain">
+                           <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Omnis dolore debitis aliquam eum, explicabo atque hic sint necessitatibus odit illo.</p>
+                       </div>
+                   </div>
+                   <div class="record">
+                       <div class="recHead">
+                           <div class="recTitle">
+                               <p>Шок Дня!</p>
+                           </div>
+                           <div class="recButt">
+                               <div class="recButtEd">
+                                   <p>&#9998;</p>
+                               </div>
+                               <div class="recButtDel">
+                                   <p>&times;</p>
+                               </div>
+                           </div>
+                       </div>
+                       <div class="recMain">
+                           <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Omnis dolore debitis aliquam eum, explicabo atque hic sint necessitatibus odit illo.</p>
+                       </div>
+                   </div>
+                   <div class="record">
+                       <div class="recHead">
+                           <div class="recTitle">
+                               <p>Шок Дня!</p>
+                           </div>
+                           <div class="recButt">
+                               <div class="recButtEd">
+                                   <p>&#9998;</p>
+                               </div>
+                               <div class="recButtDel">
+                                   <p>&times;</p>
+                               </div>
+                           </div>
+                       </div>
+                       <div class="recMain">
+                           <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Omnis dolore debitis aliquam eum, explicabo atque hic sint necessitatibus odit illo.</p>
+                       </div>
+                   </div>
+                   <div class="record">
+                       <div class="recHead">
+                           <div class="recTitle">
+                               <p>Шок Дня!</p>
+                           </div>
+                           <div class="recButt">
+                               <div class="recButtEd">
+                                   <p>&#9998;</p>
+                               </div>
+                               <div class="recButtDel">
+                                   <p>&times;</p>
+                               </div>
+                           </div>
+                       </div>
+                       <div class="recMain">
+                           <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Omnis dolore debitis aliquam eum, explicabo atque hic sint necessitatibus odit illo.</p>
+                       </div>
+                   </div>
+                   <div class="record">
+                       <div class="recHead">
+                           <div class="recTitle">
+                               <p>Шок Дня!</p>
+                           </div>
+                           <div class="recButt">
+                               <div class="recButtEd">
+                                   <p>&#9998;</p>
+                               </div>
+                               <div class="recButtDel">
+                                   <p>&times;</p>
+                               </div>
+                           </div>
+                       </div>
+                       <div class="recMain">
+                           <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Omnis dolore debitis aliquam eum, explicabo atque hic sint necessitatibus odit illo.</p>
+                       </div>
+                   </div>
+                   <div class="record">
+                       <div class="recHead">
+                           <div class="recTitle">
+                               <p>Шок Дня!</p>
+                           </div>
+                           <div class="recButt">
+                               <div class="recButtEd">
+                                   <p>&#9998;</p>
+                               </div>
+                               <div class="recButtDel">
+                                   <p>&times;</p>
+                               </div>
+                           </div>
+                       </div>
+                       <div class="recMain">
+                           <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Omnis dolore debitis aliquam eum, explicabo atque hic sint necessitatibus odit illo.</p>
+                       </div>
+                   </div>
+                   <div class="record">
+                       <div class="recHead">
+                           <div class="recTitle">
+                               <p>Шок Дня!</p>
+                           </div>
+                           <div class="recButt">
+                               <div class="recButtEd">
+                                   <p>&#9998;</p>
+                               </div>
+                               <div class="recButtDel">
+                                   <p>&times;</p>
+                               </div>
+                           </div>
+                       </div>
+                       <div class="recMain">
+                           <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Omnis dolore debitis aliquam eum, explicabo atque hic sint necessitatibus odit illo.</p>
+                       </div>
+                   </div>
+               </div>
+           </div>
+       </div>       
    </div>
     </div>
 </body>
